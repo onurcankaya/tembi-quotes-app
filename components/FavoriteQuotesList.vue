@@ -9,7 +9,7 @@ defineProps<{
 const emit = defineEmits(["remove-favorite", "clear-favorites"]);
 
 const removeFavorite = (quote: Quote) => emit("remove-favorite", quote);
-const clearFavorites = (quote: Quote) => emit("clear-favorites", quote);
+const clearFavorites = () => emit("clear-favorites");
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const clearFavorites = (quote: Quote) => emit("clear-favorites", quote);
     <v-card-title class="favorites-heading">Favorite Quotes</v-card-title>
     <v-card-text>
       <v-list class="d-flex flex-column mt-4 favorites-list">
-        <div v-for="(fav, index) in favoriteQuotes" :key="index">
+        <div v-for="fav in favoriteQuotes" :key="fav.id">
           <div
             class="d-flex flex-row justify-space-between favorites-list-item"
           >
