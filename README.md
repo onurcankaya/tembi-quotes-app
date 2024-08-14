@@ -1,5 +1,7 @@
 ### Tembi Motivational Quotes App
 
+You can see the live app on: [https://tembi-quotes-app.vercel.app/](https://tembi-quotes-app.vercel.app/)
+
 #### Setup
 
 Make sure to install the dependencies:
