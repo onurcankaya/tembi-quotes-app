@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import type { AsyncDataRequestStatus } from "#app";
 import type { Quote } from "../types/Quote";
 import tembiLogo from "/assets/tembi-logo.svg";
 
 defineProps<{
   quote: Quote;
-  status: String;
+  status: AsyncDataRequestStatus;
   isQuoteSaved: Boolean;
 }>();
 
