@@ -1,5 +1,5 @@
 <template>
   <v-app>
-    <Quotes />
+    <QuotesPage />
   </v-app>
 </template>
